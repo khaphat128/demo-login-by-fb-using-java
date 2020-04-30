@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Title</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width"/>
+    <base href="/"/>
+
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <span>OAuth2 - Single Sign on with facebook</span>
+    </div>
+
+<div id="wrapper">
+    <div class="unauthenticated">
+        <a class="btn" href="/Login">Login</a>
+    </div>
+    <div class="authenticated" style="display: none">
+        Logged in as: <span id="user"></span>
+        <div>
+            <button onclick="logout()" class="btn">Logout</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
